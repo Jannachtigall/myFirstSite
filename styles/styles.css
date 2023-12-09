@@ -1,0 +1,93 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+/**
+ * Другие стили
+ */
+
+header {
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+}
+
+.navbar {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 32px;
+	text-decoration: none;
+	color: #000;
+	padding-left: 38px;
+}
+
+.navbar-brand:hover {
+	color: #000;
+}
+
+.navbar-nav {
+	padding-left: 38px;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: 0;
+}
+
+.modal-window {
+	position: relative;
+	z-index: 2;
+	width: 550px;
+	border-radius: 10px;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
+	background-color: #fff;
+	padding: 30px;
+}
+
+.btn-close {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	opacity: 0.7;
+}
+
+.btn-close:hover {
+	opacity: 1;
+}
